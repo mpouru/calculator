@@ -1,32 +1,73 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  background:white;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  
 }
 
-.App-link {
-  color: #61dafb;
+.App {
+  height: 400px;
+  width: 300px;
+  background:white;
+  position: relative;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+
+.Display {
+  background:black;
+  color:fuchsia;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 29px;
+  box-sizing: border-box;
+  height: 20%;
+  overflow: hidden;
+  font-size: 24px;
+  position: relative;
+}
+
+.Buttons {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 80%;
+}
+
+.Button {
+  background:pink;
+  
+  display: flex;
+  box-sizing: border-box;
+  border: 1px solid black;
+  align-items: center;
+  justify-content: center;
+  width: 25%;
+  font-size: 24px;
+  color:black;
+  height: 20%;
+  min-width: 25%;
+}
+
+ .Button[data-size="2"] {
+  height: 40%;
+} 
+
+.Button[data-value="null"] {
+  pointer-events: none;
+}
+
+.Button:hover {
+  background:lightsalmon;
+  cursor: pointer;
+}
+
+.Button:active {
+  background:lightsalmon;
 }
